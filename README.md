@@ -8,11 +8,11 @@ This [Vite](https://github.com/vitejs/vite) plugin purges CSS based on HTML outp
 ## Install
 **Yarn**
 ```
-yarn add vite-plugin-html-purgecss -D
+yarn add vite-plugin-html-purgecss-extended -D
 ```
 or **npm**
 ```
-npm i vite-plugin-html-purgecss --save-dev
+npm i vite-plugin-html-purgecss-extended --save-dev
 ```
 
 ## Usage
@@ -32,5 +32,5 @@ export default {
 
 | Parameter | Type  | Description |
 | ----------- | -----------  | ----------- |
-| safeList | `UserDefinedSafelist` | Check [available safelist options in PurgeCSS docs](https://purgecss.com/configuration.html#options).
+| options | `VitePurgeCSSOptions ` | A subset of [UserDefinedOptions defined here in the purgecss docs](https://purgecss.com/configuration.html#options). exposes `"content" | "variables" | "defaultExtractor" | "safelist"`
 
