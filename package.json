@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Jax-p/vite-plugin-html-purgecss"
+    "url": "https://github.com/neonpictures/vite-plugin-html-purgecss"
   },
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
