@@ -4,15 +4,19 @@ import { PluginOption } from 'vite';
 
 export type VitePurgeCSSOptions = Pick<UserDefinedOptions, "content" | "variables" | "defaultExtractor" | "safelist">;
 
+
 function mergeConfigs(baseConfig: UserDefinedOptions, userOptions?: VitePurgeCSSOptions): UserDefinedOptions {
   if (!userOptions) return baseConfig;
 
   if (userOptions.content) {
     baseConfig.content.push(...userOptions.content)
-    delete userOptions.content
   }
 
-  return Object.assign(baseConfig, userOptions);
+  return Object.assign(baseConfig, {
+    variables: userOptions.variables,
+    defaultExtractor: userOptions.defaultExtractor,
+    safelist: userOptions.safelist,
+  });
 }
 
 export default (options?: VitePurgeCSSOptions): PluginOption => {
