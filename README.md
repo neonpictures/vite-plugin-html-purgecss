@@ -1,4 +1,8 @@
-# vite-plugin-html-purgecss
+# vite-plugin-html-purgecss-extended
+
+[![npm version](https://img.shields.io/npm/v/vite-plugin-html-purgecss-extended.svg)](https://www.npmjs.org/package/vite-plugin-html-purgecss-extended)
+[![npm downloads](https://img.shields.io/npm/dm/vite-plugin-html-purgecss-extended.svg)](http://npm-stat.com/charts.html?package=vite-plugin-html-purgecss-extended)
+
 This [Vite](https://github.com/vitejs/vite) plugin purges CSS based on HTML output using [PurgeCSS](https://github.com/FullHuman/purgecss).
 
 ✔️ Works with Multi Page App 
