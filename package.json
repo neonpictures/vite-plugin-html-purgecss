@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-html-purgecss-extended",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Purges CSS based on HTML output",
   "main": "dist/index.js",
   "author": "neonpictures",
