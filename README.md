@@ -1,9 +1,12 @@
 # vite-plugin-html-purgecss
 This [Vite](https://github.com/vitejs/vite) plugin purges CSS based on HTML output using [PurgeCSS](https://github.com/FullHuman/purgecss).
 
-✔️ Works with Multi Page App   
+✔️ Works with Multi Page App 
+
 ✔️ Content/pattern setup is not required - plugin purges styles over the whole HTML code which is being resolved by Vite
+
 ✔️ If you need to supply extra content (external HTML files, that is possible as an option)
+
 ✔  Classes can be dynamically created (`'bg-' + true ? 'red' : 'blue'`) because PurgeCSS runs over already generated HTML (_post_).
 
 ## Install
